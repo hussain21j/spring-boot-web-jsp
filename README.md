@@ -72,7 +72,7 @@ Technologies and tools Used:<br>
   
   <tr>
     <td>Maven</td>
-    <td>Build Tool<td>
+    <td>Build Tool</td>
   </tr>
 </table>
 
