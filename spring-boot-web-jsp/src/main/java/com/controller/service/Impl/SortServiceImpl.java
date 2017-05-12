@@ -1,13 +1,16 @@
 package com.controller.service.Impl;
 
+import java.util.Collections;
 import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.controller.dao.SortDataInfoDao;
 import com.controller.model.SortDataInfo;
 import com.controller.model.SortItem;
 import com.controller.service.SortService;
+import com.controller.util.SortDataInfoComparator;
 import com.controller.util.SortUtil;
 
 /**
@@ -52,7 +55,10 @@ public class SortServiceImpl implements SortService {
 	public List<SortDataInfo> getSortHistory() {
 		List<SortDataInfo> sortHistoryList;
 		sortHistoryList = sortInfoDao.getAllRecords();
+		/**
+		 * Sort the list as in reverse order of id using the comparator
+		 */
+		Collections.sort(sortHistoryList, new SortDataInfoComparator());
 		return sortHistoryList;
 	}
-
 }

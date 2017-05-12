@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html ng-app="NumberSortApp">
 <head>
-<title>H&m Sorting App</title>
+<title>Sorting App</title>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 <script type="text/javascript" src="/js/script.js"></script>
@@ -56,13 +56,16 @@
 					<h4>History Of your Sorts</h4>
 					<table>
 						<thead>
+							<th>Id</th>
 							<th>Unsorted Numbers</th>
 							<th>Sorted Numbers</th>
 							<th>Total Movements</th>
 							<th>Time Taken (In Nano Seconds)</th>
 						</thead>
 						<tbody>
-							<tr ng-repeat="sortDataInfo in sortDataInfoList">
+							<tr
+								ng-repeat="sortDataInfo in sortDataInfoList | limitTo:rowCount ">
+								<td>{{sortDataInfo.id}}</td>
 								<td>{{sortDataInfo.originaNumberArray}}</td>
 								<td>{{sortDataInfo.sortedNumberArray}}</td>
 								<td>{{sortDataInfo.shuffleCount}}</td>
@@ -70,10 +73,12 @@
 							</tr>
 						</tbody>
 					</table>
+					<ul>
+						<li>*Shows latest 10 records from the History</li>
+						<li>To Refresh the List Please Click on Sort History Button</li>
+					</ul>
 				</div>
-
 			</div>
-
 		</div>
 	</div>
 

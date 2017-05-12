@@ -1,5 +1,5 @@
 /* ------------------------------------------------------- 
-* Description:  This file contains All the style definitions for the H&MSort Application
+* Description:  This file contains All the style definitions for the Sort Application
 * Author:       Tayab Hussain
 ---------------------------------------------------------*/
 * {
@@ -34,7 +34,7 @@ fieldset {
 	display: inline-block;
 	padding: 4px 9px;
 	vertical-align: top;
-	line-height: 100%;
+	line-height: 70%;
 }
 
 input[type="text"], select {

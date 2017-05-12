@@ -2,7 +2,6 @@ package com.controller;
 
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -15,9 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class WelcomeController {
 
-	
-	@Value("${welcome.message:test}")
-	private String message = "Hello World";
+	private String message = "Welcome to Number Sort Application";
 
 	/**
 	 * Routes the to the welcome page on launch of application

@@ -20,6 +20,4 @@ public class SortItem {
 	public void setValue(String value) {
 		this.value = value;
 	}
-	
-	
 }
