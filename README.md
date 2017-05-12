@@ -59,12 +59,7 @@ Technologies and tools Used:<br>
     <td>Java Script </td>
     <td>for client side validation</td>
   </tr>
-  
-  <tr>
-    <td>Junit, Mockito</td>
-    <td>for client side validation</td>
-  </tr>
-  
+ 
   <tr>
     <td>Junit, Mockito</td>
     <td>for unit testing</td>
