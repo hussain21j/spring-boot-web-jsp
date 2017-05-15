@@ -88,6 +88,8 @@ How To Run The Application<br>
  -Use the goal command of maven as spring-boot:run<br>
  -Once its done server will start on port 8080<br>
  -Open browser and enter URI http://localhost:8080/, Application will reach to homepage<br>
+ -If any Java, JDK or copilation related issue is faced, then make sure eclipse is pointing to JDK not JRE. To point to JDK
+  &nbsp;Right click on the project in Eclipse -> Properties -> Java Build Path -> Select Libraries -> Select JDK home directory
 <br>
 <br>
 How To Use the Appliction<br>
